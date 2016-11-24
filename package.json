@@ -1,0 +1,23 @@
+{
+  "name": "codeman",
+  "version": "1.0.0",
+  "description": ">A web app to keep your code concepts/snippets at one place.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaysunarthi/codeMan.git"
+  },
+  "author": "Ajay Sunarthi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajaysunarthi/codeMan/issues"
+  },
+  "homepage": "https://github.com/ajaysunarthi/codeMan#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^3.0.1"
+  }
+}
