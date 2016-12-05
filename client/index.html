@@ -3,33 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css"> -->
+    <!-- for local dev -->
+    <script src="lib/material.min.js"></script>
+    <link rel="stylesheet" href="lib/material.indigo-pink.min.css">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="lib/codemirror/codemirror.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/3024-day.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/3024-night.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/abcdef.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/ambiance.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/base16-dark.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/bespin.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/base16-light.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/blackboard.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/cobalt.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/colorforth.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/dracula.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/duotone-dark.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/duotone-light.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/eclipse.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/elegant.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/erlang-dark.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/hopscotch.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/icecoder.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/isotope.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/lesser-dark.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/liquibyte.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/material.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/mbo.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/mdn-like.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/midnight.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/monokai.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/neat.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/neo.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/night.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/panda-syntax.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/paraiso-dark.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/paraiso-light.css">
+    <!-- no -->
+    <link rel="stylesheet" href="lib/codemirror/themes/pastel-on-dark.css">
+    <!-- no -->
+    <link rel="stylesheet" href="lib/codemirror/themes/railscasts.css">
+    <!-- no -->
+    <link rel="stylesheet" href="lib/codemirror/themes/rubyblue.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/seti.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/solarized.css">
+    <!-- no -->
+    <link rel="stylesheet" href="lib/codemirror/themes/the-matrix.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/tomorrow-night-bright.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/tomorrow-night-eighties.css">
+    <!-- no -->
+    <link rel="stylesheet" href="lib/codemirror/themes/ttcn.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/twilight.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/vibrant-ink.css">
+    <link rel="stylesheet" href="lib/codemirror/themes/xq-dark.css">
+    <!-- no -->
+    <link rel="stylesheet" href="lib/codemirror/themes/xq-light.css">
+    <script src="lib/codemirror/codemirror.js"></script>
+    <script src="lib/codemirror/mode/javascript.js"></script>
 </head>
 
 <body>
-    <div class="flex-grid">
-        <div class="content-wrapper col">
-            <div class="content">
-                <h3>Test Title</h3>
+    <div class="switch">
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+            <input type="checkbox" id="switch-1" class="mdl-switch__input" unchecked>
+            <span class="mdl-switch__label"></span>
+        </label>
+    </div>
+    <div id="main">
+        <!-- add class flex-contain or containt -->
+        <div id="A">
+            <div class="text-content">
+                <h3>test title</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et iaculis ante, et luctus felis. Donec nec quam eu nisl tempor tempor in non turpis. Donec id massa ac urna efficitur euismod eu quis risus. Suspendisse finibus a nibh eu tincidunt. Aliquam in ligula ultricies, congue lectus vitae.</p>
             </div>
         </div>
-        <div class="code col">
-            
-            <div class="switch">
-                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
-                    <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
-                    <span class="mdl-switch__label"></span>
-                </label>
+        <!-- add flex item/ remove -->
+        <div id="B">
+            <div id="code-wrapper" class="layout1">
+                <select name="" id="tooth">
+                    <option selected>default</option>
+                    <option>3024-day</option>
+                    <option>3024-night</option>
+                    <option>abcdef</option>
+                    <option>ambiance</option>
+                    <option>base16-dark</option>
+                    <option>base16-light</option>
+                    <option>bespin</option>
+                    <option>blackboard</option>
+                    <option>cobalt</option>
+                    <option>colorforth</option>
+                    <option>dracula</option>
+                    <option>duotone-dark</option>
+                    <option>duotone-light</option>
+                    <option>eclipse</option>
+                    <option>elegant</option>
+                    <option>erlang-dark</option>
+                    <option>hopscotch</option>
+                    <option>icecoder</option>
+                    <option>isotope</option>
+                    <option>lesser-dark</option>
+                    <option>liquibyte</option>
+                    <option>material</option>
+                    <option>mbo</option>
+                    <option>mdn-like</option>
+                    <option>midnight</option>
+                    <option>monokai</option>
+                    <option>neat</option>
+                    <option>neo</option>
+                    <option>night</option>
+                    <option>panda-syntax</option>
+                    <option>paraiso-dark</option>
+                    <option>paraiso-light</option>
+                    <option>pastel-on-dark</option>
+                    <option>railscasts</option>
+                    <option>rubyblue</option>
+                    <option>seti</option>
+                    <option>solarized dark</option>
+                    <option>solarized light</option>
+                    <option>the-matrix</option>
+                    <option>tomorrow-night-bright</option>
+                    <option>tomorrow-night-eighties</option>
+                    <option>ttcn</option>
+                    <option>twilight</option>
+                    <option>vibrant-ink</option>
+                    <option>xq-dark</option>
+                    <option>xq-light</option>
+                    <option>yeti</option>
+                    <option>zenburn</option>
+                </select>
+                <div ui-codemirror></div>
             </div>
-			
-			
-
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
@@ -37,8 +147,8 @@
 
 Three things
  
-	language
-	themes
-	code folding 
+    language
+    themes
+    code folding 
 
  -->
